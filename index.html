@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ----circles------ -->
+     <div class="circle circle1"></div>
+      <div class="circle2 circle"></div>
+
+      <div id="wrapper">
+        <div class="card-container">
+            <div class="image-container">
+
+                <img src="IMG20221024175933.jpg" alt="">
+            </div>
+            <div class="profile-name">
+                <h2>Rohit Kumar</h2>
+            </div>
+            <div class="profile-description">
+               <h4> Web Developer</h4>
+            </div>
+
+            <div class="btn-group">
+
+                
+                <div onclick="modalOpen()" class="btn btn1">
+                    
+                    <p > <i class="fa-solid fa-share"></i>Share my profile</p>
+                </div>
+                <div class="btn btn2">
+                    <p>Follow me</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal">
+            <div class="header-modal">
+                <h2>Share My Profile </h2>
+                <i onclick="modalClose()" class="fa-solid fa-x"></i>
+            </div>
+
+            <div class="share-source">
+                <p>Share this via</p>
+            </div>
+
+            <div class="share-items-list">
+
+                <a style="color:blue;border: 1px solid blue; border-radius: 50%;" href=""><i class="fa-brands fa-facebook"></i></a>
+                <a style="color:skyblue;border: 1px solid skyblue; border-radius: 50%;" href=""><i class="fa-brands fa-twitter"></i></a>
+                
+                <a style="color:rgb(243, 19, 94);border: 1px solid rgb(243, 19, 94); border-radius: 50%;"  href=""><i class="fa-brands fa-instagram"></i></a>
+                <a style="color:greenyellow;border: 1px solid greenyellow; border-radius: 50%;"  href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a style="color:rgb(10, 181, 255);border: 1px solid rgb(10, 181, 255); border-radius: 50%;"  href=""><i class="fa-brands fa-telegram"></i></a>
+
+            </div>
+        </div>
+        <div onclick="modalClose()" class="overlay">
+          
+        </div>
+      </div>
+
+
+      <script src="script.js"></script>
+</body>
+</html>
